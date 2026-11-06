@@ -52,7 +52,7 @@ curl https://cazimi.live/v1/mercury/next.json       # next Mercury retrograde
 curl https://cazimi.live/v1/mars/cycles.json        # every Mars cycle
 ```
 
-AI assistants can use the read-only MCP server at `https://cazimi.live/api/mcp` (Streamable HTTP, no auth, eight tools). It is published in the official MCP Registry as `live.cazimi/retrogrades` ([`server.json`](server.json)). In Claude: Settings → Connectors → Add custom connector → paste the URL.
+AI assistants can use the read-only MCP server at `https://cazimi.live/api/mcp` (Streamable HTTP, no auth, eight tools). It is published in the official MCP Registry as `live.cazimi/retrogrades` ([`server.json`](server.json)). In Claude, add it from the connector directory: [Cazimi Mercury Retrograde](https://claude.ai/directory/cazimi-mercury-retrograde).
 
 ## Regenerate
 
