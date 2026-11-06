@@ -1,0 +1,14 @@
+{
+  "upload_type": "dataset",
+  "title": "Planetary retrograde stations, shadows and cazimi, 2024–2030 (Mercury 1900–2050), from JPL DE421",
+  "description": "<p>Minute-precise UTC times of retrograde and direct stations, pre-shadow and post-shadow boundaries, and Sun conjunctions or oppositions (cazimi) for Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune and Pluto for 2024–2030, plus every Mercury retrograde from 1900 to 2050 (476 cycles). Computed with Skyfield from NASA JPL's DE421 ephemeris; the script that regenerates the files is included.</p><p>Live calendar and JSON API: <a href=\"https://cazimi.live\">cazimi.live</a>. Method: <a href=\"https://cazimi.live/methodology\">cazimi.live/methodology</a>.</p>",
+  "creators": [
+    { "name": "Rachytskyy, Max", "affiliation": "Cazimi" }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["retrograde", "ephemeris", "Mercury retrograde", "JPL DE421", "astronomy", "planetary stations"],
+  "related_identifiers": [
+    { "identifier": "https://cazimi.live/methodology", "relation": "isDocumentedBy", "resource_type": "publication-other" },
+    { "identifier": "https://cazimi.live", "relation": "isSupplementTo", "resource_type": "other" }
+  ]
+}
