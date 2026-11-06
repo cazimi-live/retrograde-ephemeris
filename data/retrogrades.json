@@ -1,0 +1,757 @@
+{
+ "generatedAt": "2026-11-04",
+ "source": "JPL DE421 via skyfield 1.55, apparent geocentric ecliptic longitude of date; station = minute the longitude speed changes sign; pre-shadow = last crossing of the direct-station degree before the retrograde station; post-shadow = first crossing of the retrograde-station degree after the direct station; cazimi = Sun conjunction inside the retrograde (Mercury, Venus), opposition for Mars, Jupiter, Saturn, Uranus, Neptune, Pluto; cazimiWindow = within 17 arcminutes",
+ "script": "tools/retrogrades.py",
+ "planets": {
+  "mercury": [
+   {
+    "sign": "Sagittarius",
+    "retro": "2024-11-26T02:42Z",
+    "retroDegree": "22°40′ Sagittarius",
+    "direct": "2024-12-15T20:56Z",
+    "directDegree": "6°24′ Sagittarius",
+    "pre": "2024-11-07T12:32Z",
+    "post": "2025-01-03T03:15Z",
+    "cazimi": "2024-12-06T02:18Z",
+    "cazimiDegree": "14°27′ Sagittarius",
+    "cazimiWindow": [
+     "2024-12-05T23:28Z",
+     "2024-12-06T05:08Z"
+    ]
+   },
+   {
+    "sign": "Aries",
+    "retro": "2025-03-15T06:46Z",
+    "retroDegree": "9°35′ Aries",
+    "direct": "2025-04-07T11:08Z",
+    "directDegree": "26°50′ Pisces",
+    "pre": "2025-03-01T07:59Z",
+    "post": "2025-04-26T08:28Z",
+    "cazimi": "2025-03-24T19:48Z",
+    "cazimiDegree": "4°25′ Aries",
+    "cazimiWindow": [
+     "2025-03-24T16:10Z",
+     "2025-03-24T23:27Z"
+    ]
+   },
+   {
+    "sign": "Leo",
+    "retro": "2025-07-18T04:45Z",
+    "retroDegree": "15°35′ Leo",
+    "direct": "2025-08-11T07:30Z",
+    "directDegree": "4°15′ Leo",
+    "pre": "2025-06-30T05:54Z",
+    "post": "2025-08-25T08:36Z",
+    "cazimi": "2025-07-31T23:41Z",
+    "cazimiDegree": "9°01′ Leo",
+    "cazimiWindow": [
+     "2025-07-31T19:41Z",
+     "2025-08-01T03:42Z"
+    ]
+   },
+   {
+    "sign": "Sagittarius",
+    "retro": "2025-11-09T19:02Z",
+    "retroDegree": "6°52′ Sagittarius",
+    "direct": "2025-11-29T17:38Z",
+    "directDegree": "20°42′ Scorpio",
+    "pre": "2025-10-21T11:10Z",
+    "post": "2025-12-17T03:56Z",
+    "cazimi": "2025-11-20T09:23Z",
+    "cazimiDegree": "28°18′ Scorpio",
+    "cazimiWindow": [
+     "2025-11-20T06:31Z",
+     "2025-11-20T12:16Z"
+    ]
+   },
+   {
+    "sign": "Pisces",
+    "retro": "2026-02-26T06:48Z",
+    "retroDegree": "22°34′ Pisces",
+    "direct": "2026-03-20T19:33Z",
+    "directDegree": "8°29′ Pisces",
+    "pre": "2026-02-11T22:12Z",
+    "post": "2026-04-09T11:42Z",
+    "cazimi": "2026-03-07T11:02Z",
+    "cazimiDegree": "16°53′ Pisces",
+    "cazimiWindow": [
+     "2026-03-07T07:38Z",
+     "2026-03-07T14:25Z"
+    ]
+   },
+   {
+    "sign": "Cancer",
+    "retro": "2026-06-29T17:36Z",
+    "retroDegree": "26°15′ Cancer",
+    "direct": "2026-07-23T22:58Z",
+    "directDegree": "16°19′ Cancer",
+    "pre": "2026-06-13T00:53Z",
+    "post": "2026-08-07T03:37Z",
+    "cazimi": "2026-07-13T01:26Z",
+    "cazimiDegree": "20°42′ Cancer",
+    "cazimiWindow": [
+     "2026-07-12T21:10Z",
+     "2026-07-13T05:41Z"
+    ]
+   },
+   {
+    "sign": "Scorpio",
+    "retro": "2026-10-24T07:13Z",
+    "retroDegree": "20°59′ Scorpio",
+    "direct": "2026-11-13T15:54Z",
+    "directDegree": "5°02′ Scorpio",
+    "pre": "2026-10-04T09:09Z",
+    "post": "2026-11-30T06:16Z",
+    "cazimi": "2026-11-04T14:24Z",
+    "cazimiDegree": "12°11′ Scorpio",
+    "cazimiWindow": [
+     "2026-11-04T11:28Z",
+     "2026-11-04T17:21Z"
+    ]
+   },
+   {
+    "sign": "Pisces",
+    "retro": "2027-02-09T17:36Z",
+    "retroDegree": "5°59′ Pisces",
+    "direct": "2027-03-03T12:32Z",
+    "directDegree": "20°55′ Aquarius",
+    "pre": "2027-01-25T18:58Z",
+    "post": "2027-03-23T14:58Z",
+    "cazimi": "2027-02-18T16:39Z",
+    "cazimiDegree": "29°48′ Aquarius",
+    "cazimiWindow": [
+     "2027-02-18T13:28Z",
+     "2027-02-18T19:50Z"
+    ]
+   },
+   {
+    "sign": "Cancer",
+    "retro": "2027-06-10T18:15Z",
+    "retroDegree": "6°22′ Cancer",
+    "direct": "2027-07-04T19:39Z",
+    "directDegree": "27°28′ Gemini",
+    "pre": "2027-05-26T06:04Z",
+    "post": "2027-07-19T08:43Z",
+    "cazimi": "2027-06-23T08:00Z",
+    "cazimiDegree": "1°40′ Cancer",
+    "cazimiWindow": [
+     "2027-06-23T03:33Z",
+     "2027-06-23T12:26Z"
+    ]
+   },
+   {
+    "sign": "Scorpio",
+    "retro": "2027-10-07T14:37Z",
+    "retroDegree": "4°56′ Scorpio",
+    "direct": "2027-10-28T14:11Z",
+    "directDegree": "19°19′ Libra",
+    "pre": "2027-09-17T07:29Z",
+    "post": "2027-11-13T09:55Z",
+    "cazimi": "2027-10-19T15:31Z",
+    "cazimiDegree": "26°01′ Libra",
+    "cazimiWindow": [
+     "2027-10-19T12:27Z",
+     "2027-10-19T18:34Z"
+    ]
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2028-01-24T11:02Z",
+    "retroDegree": "19°42′ Aquarius",
+    "direct": "2028-02-14T12:38Z",
+    "directDegree": "3°59′ Aquarius",
+    "pre": "2028-01-08T19:23Z",
+    "post": "2028-03-05T16:43Z",
+    "cazimi": "2028-02-02T08:47Z",
+    "cazimiDegree": "13°01′ Aquarius",
+    "cazimiWindow": [
+     "2028-02-02T05:46Z",
+     "2028-02-02T11:49Z"
+    ]
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2028-05-21T08:43Z",
+    "retroDegree": "16°19′ Gemini",
+    "direct": "2028-06-14T06:06Z",
+    "directDegree": "7°45′ Gemini",
+    "pre": "2028-05-06T18:40Z",
+    "post": "2028-06-29T08:58Z",
+    "cazimi": "2028-06-02T02:46Z",
+    "cazimiDegree": "12°06′ Gemini",
+    "cazimiWindow": [
+     "2028-06-01T22:18Z",
+     "2028-06-02T07:15Z"
+    ]
+   },
+   {
+    "sign": "Libra",
+    "retro": "2028-09-19T16:34Z",
+    "retroDegree": "18°36′ Libra",
+    "direct": "2028-10-11T10:28Z",
+    "directDegree": "3°29′ Libra",
+    "pre": "2028-08-30T07:17Z",
+    "post": "2028-10-26T13:50Z",
+    "cazimi": "2028-10-02T10:37Z",
+    "cazimiDegree": "9°46′ Libra",
+    "cazimiWindow": [
+     "2028-10-02T07:25Z",
+     "2028-10-02T13:50Z"
+    ]
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2029-01-07T07:57Z",
+    "retroDegree": "3°38′ Aquarius",
+    "direct": "2029-01-27T18:40Z",
+    "directDegree": "17°32′ Capricorn",
+    "pre": "2028-12-21T21:24Z",
+    "post": "2029-02-16T16:52Z",
+    "cazimi": "2029-01-16T08:17Z",
+    "cazimiDegree": "26°29′ Capricorn",
+    "cazimiWindow": [
+     "2029-01-16T05:21Z",
+     "2029-01-16T11:12Z"
+    ]
+   },
+   {
+    "sign": "Taurus",
+    "retro": "2029-05-01T23:05Z",
+    "retroDegree": "26°40′ Taurus",
+    "direct": "2029-05-25T19:21Z",
+    "directDegree": "17°34′ Taurus",
+    "pre": "2029-04-17T22:45Z",
+    "post": "2029-06-10T19:56Z",
+    "cazimi": "2029-05-12T23:27Z",
+    "cazimiDegree": "22°31′ Taurus",
+    "cazimiWindow": [
+     "2029-05-12T19:06Z",
+     "2029-05-13T03:48Z"
+    ]
+   },
+   {
+    "sign": "Libra",
+    "retro": "2029-09-02T12:18Z",
+    "retroDegree": "1°50′ Libra",
+    "direct": "2029-09-25T02:02Z",
+    "directDegree": "17°27′ Virgo",
+    "pre": "2029-08-13T09:10Z",
+    "post": "2029-10-09T16:21Z",
+    "cazimi": "2029-09-15T21:11Z",
+    "cazimiDegree": "23°19′ Virgo",
+    "cazimiWindow": [
+     "2029-09-15T17:48Z",
+     "2029-09-16T00:34Z"
+    ]
+   },
+   {
+    "sign": "Capricorn",
+    "retro": "2029-12-22T05:51Z",
+    "retroDegree": "17°42′ Capricorn",
+    "direct": "2030-01-11T05:45Z",
+    "directDegree": "1°26′ Capricorn",
+    "pre": "2029-12-04T23:17Z",
+    "post": "2030-01-30T15:54Z",
+    "cazimi": "2029-12-31T12:28Z",
+    "cazimiDegree": "10°07′ Capricorn",
+    "cazimiWindow": [
+     "2029-12-31T09:37Z",
+     "2029-12-31T15:19Z"
+    ]
+   },
+   {
+    "sign": "Taurus",
+    "retro": "2030-04-13T02:33Z",
+    "retroDegree": "7°48′ Taurus",
+    "direct": "2030-05-06T20:15Z",
+    "directDegree": "27°26′ Aries",
+    "pre": "2030-03-30T07:49Z",
+    "post": "2030-05-24T00:39Z",
+    "cazimi": "2030-04-23T11:14Z",
+    "cazimiDegree": "3°21′ Taurus",
+    "cazimiWindow": [
+     "2030-04-23T07:09Z",
+     "2030-04-23T15:20Z"
+    ]
+   },
+   {
+    "sign": "Virgo",
+    "retro": "2030-08-16T01:20Z",
+    "retroDegree": "14°30′ Virgo",
+    "direct": "2030-09-08T09:28Z",
+    "directDegree": "1°06′ Virgo",
+    "pre": "2030-07-27T12:48Z",
+    "post": "2030-09-22T14:58Z",
+    "cazimi": "2030-08-29T20:11Z",
+    "cazimiDegree": "6°32′ Virgo",
+    "cazimiWindow": [
+     "2030-08-29T16:34Z",
+     "2030-08-29T23:47Z"
+    ]
+   },
+   {
+    "sign": "Capricorn",
+    "retro": "2030-12-06T02:47Z",
+    "retroDegree": "1°52′ Capricorn",
+    "direct": "2030-12-25T21:14Z",
+    "directDegree": "15°33′ Sagittarius",
+    "pre": "2030-11-17T23:57Z",
+    "post": "2031-01-13T14:46Z",
+    "cazimi": "2030-12-15T19:14Z",
+    "cazimiDegree": "23°51′ Sagittarius",
+    "cazimiWindow": [
+     "2030-12-15T16:24Z",
+     "2030-12-15T22:04Z"
+    ]
+   }
+  ],
+  "venus": [
+   {
+    "sign": "Aries",
+    "retro": "2025-03-02T00:36Z",
+    "retroDegree": "10°50′ Aries",
+    "direct": "2025-04-13T01:02Z",
+    "directDegree": "24°37′ Pisces",
+    "pre": "2025-01-28T13:23Z",
+    "post": "2025-05-16T06:04Z",
+    "cazimi": "2025-03-23T01:07Z",
+    "cazimiDegree": "2°39′ Aries",
+    "cazimiWindow": [
+     "2025-03-22T20:56Z",
+     "2025-03-23T05:19Z"
+    ]
+   },
+   {
+    "sign": "Scorpio",
+    "retro": "2026-10-03T07:16Z",
+    "retroDegree": "8°29′ Scorpio",
+    "direct": "2026-11-14T00:27Z",
+    "directDegree": "22°52′ Libra",
+    "pre": "2026-08-31T14:46Z",
+    "post": "2026-12-15T18:44Z",
+    "cazimi": "2026-10-24T03:44Z",
+    "cazimiDegree": "0°45′ Scorpio",
+    "cazimiWindow": [
+     "2026-10-23T23:30Z",
+     "2026-10-24T07:58Z"
+    ]
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2028-05-10T23:03Z",
+    "retroDegree": "19°41′ Gemini",
+    "direct": "2028-06-22T22:13Z",
+    "directDegree": "3°11′ Gemini",
+    "pre": "2028-04-07T13:47Z",
+    "post": "2028-07-26T21:10Z",
+    "cazimi": "2028-06-01T10:00Z",
+    "cazimiDegree": "11°26′ Gemini",
+    "cazimiWindow": [
+     "2028-06-01T05:43Z",
+     "2028-06-01T14:17Z"
+    ]
+   },
+   {
+    "sign": "Capricorn",
+    "retro": "2029-12-16T23:48Z",
+    "retroDegree": "24°02′ Capricorn",
+    "direct": "2030-01-26T21:33Z",
+    "directDegree": "8°38′ Capricorn",
+    "pre": "2029-11-15T09:28Z",
+    "post": "2030-02-27T14:22Z",
+    "cazimi": "2030-01-06T13:18Z",
+    "cazimiDegree": "16°16′ Capricorn",
+    "cazimiWindow": [
+     "2030-01-06T09:07Z",
+     "2030-01-06T17:28Z"
+    ]
+   }
+  ],
+  "mars": [
+   {
+    "sign": "Leo",
+    "retro": "2024-12-06T23:33Z",
+    "retroDegree": "6°10′ Leo",
+    "direct": "2025-02-24T02:00Z",
+    "directDegree": "17°01′ Cancer",
+    "pre": "2024-10-05T04:40Z",
+    "post": "2025-05-02T06:07Z",
+    "opposition": "2025-01-16T02:39Z",
+    "oppositionDegree": "26°13′ Cancer"
+   },
+   {
+    "sign": "Virgo",
+    "retro": "2027-01-10T12:59Z",
+    "retroDegree": "10°26′ Virgo",
+    "direct": "2027-04-01T14:08Z",
+    "directDegree": "20°56′ Leo",
+    "pre": "2026-11-05T15:34Z",
+    "post": "2027-06-08T01:58Z",
+    "opposition": "2027-02-19T15:51Z",
+    "oppositionDegree": "0°46′ Virgo"
+   },
+   {
+    "sign": "Libra",
+    "retro": "2029-02-14T08:16Z",
+    "retroDegree": "13°55′ Libra",
+    "direct": "2029-05-05T19:00Z",
+    "directDegree": "24°56′ Virgo",
+    "pre": "2028-12-10T02:31Z",
+    "post": "2029-07-09T04:02Z",
+    "opposition": "2029-03-25T07:49Z",
+    "oppositionDegree": "4°57′ Libra"
+   }
+  ],
+  "jupiter": [
+   {
+    "sign": "Gemini",
+    "retro": "2024-10-09T07:05Z",
+    "retroDegree": "21°20′ Gemini",
+    "direct": "2025-02-04T09:40Z",
+    "directDegree": "11°17′ Gemini",
+    "pre": "2024-07-15T14:47Z",
+    "post": "2025-04-30T20:11Z",
+    "opposition": "2024-12-07T20:58Z",
+    "oppositionDegree": "16°15′ Gemini"
+   },
+   {
+    "sign": "Cancer",
+    "retro": "2025-11-11T16:41Z",
+    "retroDegree": "25°09′ Cancer",
+    "direct": "2026-03-11T03:30Z",
+    "directDegree": "15°05′ Cancer",
+    "pre": "2025-08-17T07:34Z",
+    "post": "2026-06-06T15:40Z",
+    "opposition": "2026-01-10T08:42Z",
+    "oppositionDegree": "20°06′ Cancer"
+   },
+   {
+    "sign": "Leo",
+    "retro": "2026-12-13T00:57Z",
+    "retroDegree": "27°01′ Leo",
+    "direct": "2027-04-13T02:11Z",
+    "directDegree": "17°00′ Leo",
+    "pre": "2026-09-17T04:29Z",
+    "post": "2027-07-11T04:50Z",
+    "opposition": "2027-02-11T00:29Z",
+    "oppositionDegree": "22°02′ Leo"
+   },
+   {
+    "sign": "Virgo",
+    "retro": "2028-01-12T08:53Z",
+    "retroDegree": "27°31′ Virgo",
+    "direct": "2028-05-13T20:00Z",
+    "directDegree": "17°32′ Virgo",
+    "pre": "2027-10-17T05:51Z",
+    "post": "2028-08-11T12:53Z",
+    "opposition": "2028-03-12T15:37Z",
+    "oppositionDegree": "22°35′ Virgo"
+   },
+   {
+    "sign": "Libra",
+    "retro": "2029-02-10T13:07Z",
+    "retroDegree": "27°25′ Libra",
+    "direct": "2029-06-13T21:07Z",
+    "directDegree": "17°30′ Libra",
+    "pre": "2028-11-15T11:40Z",
+    "post": "2029-09-11T05:46Z",
+    "opposition": "2029-04-12T04:05Z",
+    "oppositionDegree": "22°32′ Libra"
+   },
+   {
+    "sign": "Scorpio",
+    "retro": "2030-03-13T14:33Z",
+    "retroDegree": "27°38′ Scorpio",
+    "direct": "2030-07-15T01:26Z",
+    "directDegree": "17°46′ Scorpio",
+    "pre": "2029-12-16T21:24Z",
+    "post": "2030-10-11T04:18Z",
+    "opposition": "2030-05-13T11:33Z",
+    "oppositionDegree": "22°46′ Scorpio"
+   }
+  ],
+  "saturn": [
+   {
+    "sign": "Aries",
+    "retro": "2025-07-13T04:07Z",
+    "retroDegree": "1°56′ Aries",
+    "direct": "2025-11-28T03:52Z",
+    "directDegree": "25°09′ Pisces",
+    "pre": "2025-04-06T14:49Z",
+    "post": "2026-03-02T18:13Z",
+    "opposition": "2025-09-21T05:46Z",
+    "oppositionDegree": "28°31′ Pisces"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2026-07-26T19:56Z",
+    "retroDegree": "14°45′ Aries",
+    "direct": "2026-12-10T23:31Z",
+    "directDegree": "7°56′ Aries",
+    "pre": "2026-04-20T12:17Z",
+    "post": "2027-03-15T06:51Z",
+    "opposition": "2026-10-04T12:29Z",
+    "oppositionDegree": "11°18′ Aries"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2027-08-09T18:06Z",
+    "retroDegree": "27°53′ Aries",
+    "direct": "2027-12-24T02:46Z",
+    "directDegree": "21°01′ Aries",
+    "pre": "2027-05-04T18:05Z",
+    "post": "2028-03-27T04:32Z",
+    "opposition": "2027-10-18T00:36Z",
+    "oppositionDegree": "24°25′ Aries"
+   },
+   {
+    "sign": "Taurus",
+    "retro": "2028-08-22T22:17Z",
+    "retroDegree": "11°19′ Taurus",
+    "direct": "2029-01-05T12:39Z",
+    "directDegree": "4°25′ Taurus",
+    "pre": "2028-05-18T07:15Z",
+    "post": "2029-04-09T11:39Z",
+    "opposition": "2028-10-30T17:34Z",
+    "oppositionDegree": "7°50′ Taurus"
+   },
+   {
+    "sign": "Taurus",
+    "retro": "2029-09-06T08:34Z",
+    "retroDegree": "25°01′ Taurus",
+    "direct": "2030-01-19T03:54Z",
+    "directDegree": "18°05′ Taurus",
+    "pre": "2029-06-02T01:56Z",
+    "post": "2030-04-23T04:20Z",
+    "opposition": "2029-11-13T15:00Z",
+    "oppositionDegree": "21°31′ Taurus"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2030-09-20T21:30Z",
+    "retroDegree": "8°57′ Gemini",
+    "direct": "2031-02-02T02:25Z",
+    "directDegree": "2°00′ Gemini",
+    "pre": "2030-06-16T23:43Z",
+    "post": "2031-05-07T06:17Z",
+    "opposition": "2030-11-27T15:56Z",
+    "oppositionDegree": "5°27′ Gemini"
+   }
+  ],
+  "uranus": [
+   {
+    "sign": "Taurus",
+    "retro": "2024-09-01T15:18Z",
+    "retroDegree": "27°15′ Taurus",
+    "direct": "2025-01-30T16:22Z",
+    "directDegree": "23°16′ Taurus",
+    "pre": "2024-05-16T02:29Z",
+    "post": "2025-05-17T06:47Z",
+    "opposition": "2024-11-17T02:45Z",
+    "oppositionDegree": "25°14′ Taurus"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2025-09-06T04:51Z",
+    "retroDegree": "1°28′ Gemini",
+    "direct": "2026-02-04T02:33Z",
+    "directDegree": "27°28′ Taurus",
+    "pre": "2025-05-20T18:33Z",
+    "post": "2026-05-21T16:42Z",
+    "opposition": "2025-11-21T12:25Z",
+    "oppositionDegree": "29°27′ Taurus"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2026-09-10T18:27Z",
+    "retroDegree": "5°42′ Gemini",
+    "direct": "2027-02-08T12:30Z",
+    "directDegree": "1°41′ Gemini",
+    "pre": "2026-05-25T10:44Z",
+    "post": "2027-05-26T03:47Z",
+    "opposition": "2026-11-25T22:41Z",
+    "oppositionDegree": "3°41′ Gemini"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2027-09-15T09:09Z",
+    "retroDegree": "9°57′ Gemini",
+    "direct": "2028-02-12T23:50Z",
+    "directDegree": "5°56′ Gemini",
+    "pre": "2027-05-30T03:47Z",
+    "post": "2028-05-29T15:24Z",
+    "opposition": "2027-11-30T09:22Z",
+    "oppositionDegree": "7°56′ Gemini"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2028-09-19T00:01Z",
+    "retroDegree": "14°14′ Gemini",
+    "direct": "2029-02-16T10:52Z",
+    "directDegree": "10°12′ Gemini",
+    "pre": "2028-06-02T21:28Z",
+    "post": "2029-06-03T03:50Z",
+    "opposition": "2028-12-03T20:29Z",
+    "oppositionDegree": "12°13′ Gemini"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2029-09-23T16:22Z",
+    "retroDegree": "18°33′ Gemini",
+    "direct": "2030-02-20T23:23Z",
+    "directDegree": "14°30′ Gemini",
+    "pre": "2029-06-07T16:27Z",
+    "post": "2030-06-07T16:21Z",
+    "opposition": "2029-12-08T08:11Z",
+    "oppositionDegree": "16°31′ Gemini"
+   },
+   {
+    "sign": "Gemini",
+    "retro": "2030-09-28T08:27Z",
+    "retroDegree": "22°54′ Gemini",
+    "direct": "2031-02-25T11:24Z",
+    "directDegree": "18°50′ Gemini",
+    "pre": "2030-06-12T12:10Z",
+    "post": "2031-06-12T05:41Z",
+    "opposition": "2030-12-12T20:36Z",
+    "oppositionDegree": "20°52′ Gemini"
+   }
+  ],
+  "neptune": [
+   {
+    "sign": "Aries",
+    "retro": "2025-07-04T21:34Z",
+    "retroDegree": "2°11′ Aries",
+    "direct": "2025-12-10T12:24Z",
+    "directDegree": "29°22′ Pisces",
+    "pre": "2025-03-13T21:50Z",
+    "post": "2026-03-31T05:43Z",
+    "opposition": "2025-09-23T12:54Z",
+    "oppositionDegree": "0°45′ Aries"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2026-07-07T10:55Z",
+    "retroDegree": "4°25′ Aries",
+    "direct": "2026-12-12T22:18Z",
+    "directDegree": "1°37′ Aries",
+    "pre": "2026-03-16T08:55Z",
+    "post": "2027-04-02T19:00Z",
+    "opposition": "2026-09-26T01:36Z",
+    "oppositionDegree": "3°00′ Aries"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2027-07-09T22:41Z",
+    "retroDegree": "6°40′ Aries",
+    "direct": "2027-12-15T09:07Z",
+    "directDegree": "3°51′ Aries",
+    "pre": "2027-03-18T20:10Z",
+    "post": "2028-04-04T08:08Z",
+    "opposition": "2027-09-28T14:19Z",
+    "oppositionDegree": "5°14′ Aries"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2028-07-11T13:04Z",
+    "retroDegree": "8°54′ Aries",
+    "direct": "2028-12-16T20:44Z",
+    "directDegree": "6°06′ Aries",
+    "pre": "2028-03-20T07:53Z",
+    "post": "2029-04-06T20:58Z",
+    "opposition": "2028-09-30T02:48Z",
+    "oppositionDegree": "7°29′ Aries"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2029-07-14T02:10Z",
+    "retroDegree": "11°08′ Aries",
+    "direct": "2029-12-19T08:24Z",
+    "directDegree": "8°20′ Aries",
+    "pre": "2029-03-22T20:07Z",
+    "post": "2030-04-09T09:22Z",
+    "opposition": "2029-10-02T15:24Z",
+    "oppositionDegree": "9°43′ Aries"
+   },
+   {
+    "sign": "Aries",
+    "retro": "2030-07-16T16:28Z",
+    "retroDegree": "13°23′ Aries",
+    "direct": "2030-12-21T20:40Z",
+    "directDegree": "10°34′ Aries",
+    "pre": "2030-03-25T08:44Z",
+    "post": "2031-04-11T21:27Z",
+    "opposition": "2030-10-05T03:46Z",
+    "oppositionDegree": "11°58′ Aries"
+   }
+  ],
+  "pluto": [
+   {
+    "sign": "Aquarius",
+    "retro": "2025-05-04T15:26Z",
+    "retroDegree": "3°49′ Aquarius",
+    "direct": "2025-10-14T02:53Z",
+    "directDegree": "1°22′ Aquarius",
+    "pre": "2025-01-10T15:42Z",
+    "post": "2026-02-04T20:26Z",
+    "opposition": "2025-07-25T06:33Z",
+    "oppositionDegree": "2°35′ Aquarius"
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2026-05-06T15:34Z",
+    "retroDegree": "5°31′ Aquarius",
+    "direct": "2026-10-16T02:40Z",
+    "directDegree": "3°04′ Aquarius",
+    "pre": "2026-01-12T07:42Z",
+    "post": "2027-02-07T01:16Z",
+    "opposition": "2026-07-27T06:55Z",
+    "oppositionDegree": "4°17′ Aquarius"
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2027-05-08T12:56Z",
+    "retroDegree": "7°11′ Aquarius",
+    "direct": "2027-10-18T03:50Z",
+    "directDegree": "4°45′ Aquarius",
+    "pre": "2027-01-13T23:39Z",
+    "post": "2028-02-09T05:13Z",
+    "opposition": "2027-07-29T06:48Z",
+    "oppositionDegree": "5°58′ Aquarius"
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2028-05-09T09:33Z",
+    "retroDegree": "8°50′ Aquarius",
+    "direct": "2028-10-19T03:42Z",
+    "directDegree": "6°24′ Aquarius",
+    "pre": "2028-01-15T15:37Z",
+    "post": "2029-02-10T08:10Z",
+    "opposition": "2028-07-30T06:03Z",
+    "oppositionDegree": "7°37′ Aquarius"
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2029-05-11T04:17Z",
+    "retroDegree": "10°27′ Aquarius",
+    "direct": "2029-10-21T03:54Z",
+    "directDegree": "8°03′ Aquarius",
+    "pre": "2029-01-16T07:27Z",
+    "post": "2030-02-12T10:33Z",
+    "opposition": "2029-08-01T04:56Z",
+    "oppositionDegree": "9°15′ Aquarius"
+   },
+   {
+    "sign": "Aquarius",
+    "retro": "2030-05-12T23:12Z",
+    "retroDegree": "12°04′ Aquarius",
+    "direct": "2030-10-23T03:06Z",
+    "directDegree": "9°40′ Aquarius",
+    "pre": "2030-01-17T23:00Z",
+    "post": "2031-02-14T12:15Z",
+    "opposition": "2030-08-03T02:59Z",
+    "oppositionDegree": "10°51′ Aquarius"
+   }
+  ]
+ }
+}
