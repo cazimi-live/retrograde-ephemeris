@@ -8,6 +8,7 @@ authors:
     given-names: "Max"
     affiliation: "Cazimi"
     website: "https://cazimi.live"
+doi: "10.5281/zenodo.24011806"
 license: CC-BY-4.0
 url: "https://cazimi.live/methodology"
 repository-code: "https://github.com/cazimi-live/retrograde-ephemeris"

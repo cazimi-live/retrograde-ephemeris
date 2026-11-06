@@ -1,5 +1,7 @@
 # Retrograde ephemeris
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24011806.svg)](https://doi.org/10.5281/zenodo.24011806)
+
 Exact times of every planetary retrograde station, shadow boundary and Sun conjunction, to the minute in UTC, computed from NASA JPL's DE421 ephemeris.
 
 - **Eight planets, 2024–2030:** Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto: [`data/retrogrades.json`](data/retrogrades.json)
