@@ -93,3 +93,5 @@ for name, key in [(n, PLANETS[n]) for n in sys.argv[3].split(',')]:
     out[name] = cycles
     print(name, len(cycles), file=sys.stderr)
 json.dump(out, open(sys.argv[4], 'w'), indent=1)
+# Sidereal (Vedic, Lahiri) signs, degrees and nakshatras for every cycle: tools/sidereal.py
+sys.path.insert(0, __import__('os').path.dirname(__file__)); import sidereal; sidereal.enrich(sys.argv[4])

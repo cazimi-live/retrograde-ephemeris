@@ -25,6 +25,7 @@ All positions are apparent geocentric ecliptic longitude of date, as seen from E
 | `opposition` | Mars to Pluto: the minute the planet is 180° from the Sun, inside the retrograde |
 | `*Degree` | Position at that moment, in degrees and arcminutes of a tropical sign |
 | `sign` | Sign at the retrograde station |
+| `sidereal` | The same moments in the sidereal (Vedic, Jyotish) zodiac, Lahiri ayanamsa: `sign`, `*Degree`, `*Lon` (decimal degrees) and `*Nakshatra` (`name`, `number` 1–27, `pada` 1–4) |
 
 Times are ISO 8601 UTC rounded to the nearest minute, for example `2027-02-09T17:36Z`.
 
@@ -39,6 +40,19 @@ Example, the Mercury retrograde of February 2027:
   "cazimiWindow": ["2027-02-18T13:28Z", "2027-02-18T19:50Z"],
   "direct": "2027-03-03T12:32Z", "directDegree": "20°55′ Aquarius",
   "post": "2027-03-23T14:58Z"
+}
+```
+
+## Sidereal (Vedic) zodiac
+
+Retrograde timing is the same in both zodiacs: a station is the minute the planet's apparent motion reverses, whatever the frame. Only the sign and degree differ. Every cycle carries a `sidereal` block, and each file has an `ayanamsa` table (1 January of each year). The ayanamsa is Lahiri (Chitrapaksha), as Swiss Ephemeris defines `SE_SIDM_LAHIRI`: 23°15′00.658″ at 1956-03-21 0h TT, carried by IAU 2006 general precession, plus nutation in longitude so it matches the apparent longitude of date. Sidereal = tropical − ayanamsa (about 24°14′ in 2027). Code: [`tools/sidereal.py`](tools/sidereal.py).
+
+```json
+"sidereal": {
+  "sign": "Aquarius",
+  "retroDegree": "11°45′ Aquarius", "retroNakshatra": {"name": "Shatabhisha", "number": 24, "pada": 2},
+  "cazimiDegree": "5°33′ Aquarius",
+  "directDegree": "26°41′ Capricorn", "directNakshatra": {"name": "Dhanishta", "number": 23, "pada": 2}
 }
 ```
 
@@ -62,7 +76,7 @@ pip install -r requirements.txt
 python tools/retrogrades.py 2025 2030 mercury,venus,mars,jupiter,saturn,uranus,neptune,pluto out.json
 ```
 
-DE421 covers 1900–2050, which bounds the Mercury table. A full eight-planet run takes a few minutes.
+DE421 covers 1900–2050, which bounds the Mercury table. A full eight-planet run takes a few minutes. To add or refresh only the sidereal blocks in existing files: `python tools/sidereal.py data/retrogrades.json data/mercury-1900-2050.json`.
 
 ## Licence and citation
 
