@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use these retrograde times, please cite them as below."
 type: dataset
-title: "Retrograde ephemeris: planetary stations, shadows and cazimi from JPL DE421"
+title: "Planetary retrograde stations, shadows and cazimi, 2024–2030 (Mercury 1900–2050), from JPL DE421"
 abstract: "Minute-precise UTC times of retrograde and direct stations, pre-shadow and post-shadow boundaries, and Sun conjunctions or oppositions for Mercury through Pluto, 2024–2030, and every Mercury retrograde 1900–2050, computed with Skyfield from the JPL DE421 ephemeris."
 authors:
   - family-names: "Rachytskyy"
@@ -19,5 +19,8 @@ keywords:
   - JPL DE421
   - astronomy
   - planetary stations
+  - astronomical data
+  - open data
+  - iCalendar
 date-released: 2026-11-06
 version: "2026.11.06"

@@ -1,16 +1,73 @@
 # Retrograde ephemeris
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24011806.svg)](https://doi.org/10.5281/zenodo.24011806)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 
-Exact times of every planetary retrograde station, shadow boundary and Sun conjunction, to the minute in UTC, computed from NASA JPL's DE421 ephemeris.
+**The exact minute (UTC) of every planetary retrograde station, shadow boundary and Sun conjunction, computed from NASA JPL's DE421 ephemeris.** Mercury to Pluto for 2024–2030, and every Mercury retrograde from 1900 to 2050. Open data you can cite, from [Cazimi](https://cazimi.live). It is astronomy timing, not a horoscope.
 
-- **Eight planets, 2024–2030:** Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto: [`data/retrogrades.json`](data/retrogrades.json)
-- **Mercury, 1900–2050:** all 476 retrograde cycles: [`data/mercury-1900-2050.json`](data/mercury-1900-2050.json)
-- **The script that generates them:** [`tools/retrogrades.py`](tools/retrogrades.py) (Python, [Skyfield](https://rhodesmill.org/skyfield/))
+```sh
+curl https://cazimi.live/v1/planets/today.json   # which planets are retrograde today (live, no key)
+```
 
-This is the dataset behind [cazimi.live](https://cazimi.live), its [JSON API](https://cazimi.live/methodology#api), its MCP server and the iPhone app [Mercury Retrograde: Cazimi](https://apps.apple.com/us/app/cazimi-mercury-retrograde/id6760207689). It is astronomy timing, not a horoscope.
+| File | What it holds |
+|---|---|
+| [`data/retrogrades.json`](data/retrogrades.json) | Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto: every retrograde 2024–2030 |
+| [`data/mercury-1900-2050.json`](data/mercury-1900-2050.json) | Mercury: all 476 retrograde cycles 1900–2050 |
+| [`tools/retrogrades.py`](tools/retrogrades.py) | The script that generates both files (Python, [Skyfield](https://rhodesmill.org/skyfield/)) |
+| [`tools/sidereal.py`](tools/sidereal.py) | Adds the sidereal (Vedic, Lahiri) signs, degrees and nakshatras |
+| [`examples/`](examples) | Print the next Mercury retrograde in [Python](examples/python/next_mercury_retrograde.py) (stdlib only) or [JavaScript](examples/javascript/next-mercury-retrograde.mjs) (Node 18+) |
+| [`CITATION.cff`](CITATION.cff) | Citation metadata (GitHub's "Cite this repository" button) |
 
-## What each moment means
+**Live API · iCal · MCP · web:** [JSON API and MCP server](https://cazimi.live/methodology#api) · [retrograde calendar feed (iCal)](https://cazimi.live/retrograde-calendar) · [accuracy, checked against JPL Horizons](https://cazimi.live/accuracy) · [Mercury retrograde 2027 dates](https://cazimi.live/mercury-retrograde-2027) · [cazimi.live](https://cazimi.live)
+
+## Cite this dataset
+
+APA:
+
+> Rachytskyy, M. (2026). *Planetary retrograde stations, shadows and cazimi, 2024–2030 (Mercury 1900–2050), from JPL DE421* (Version 2026.11.06) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24011806
+
+BibTeX:
+
+```bibtex
+@dataset{rachytskyy_2026_retrograde_ephemeris,
+  author    = {Rachytskyy, Max},
+  title     = {Planetary retrograde stations, shadows and cazimi, 2024--2030 (Mercury 1900--2050), from {JPL} {DE421}},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {2026.11.06},
+  doi       = {10.5281/zenodo.24011806},
+  url       = {https://doi.org/10.5281/zenodo.24011806}
+}
+```
+
+On a web page, a plain credit is enough: "Retrograde times: [Cazimi](https://cazimi.live), from JPL DE421."
+
+## Quick start
+
+```sh
+git clone https://github.com/cazimi-live/retrograde-ephemeris
+cd retrograde-ephemeris
+python examples/python/next_mercury_retrograde.py
+node examples/javascript/next-mercury-retrograde.mjs
+```
+
+```text
+Mercury next retrograde, in Pisces
+  pre-shadow begins   2027-01-25T18:58Z
+  station retrograde  2027-02-09T17:36Z  5°59′ Pisces
+  cazimi (Sun)        2027-02-18T16:39Z  29°48′ Aquarius
+  station direct      2027-03-03T12:32Z  20°55′ Aquarius
+  post-shadow ends    2027-03-23T14:58Z
+```
+
+Pass a date (`2031-06-01`) to ask as of another day. To read a file straight from GitHub without cloning: `https://raw.githubusercontent.com/cazimi-live/retrograde-ephemeris/main/data/retrogrades.json`.
+
+## File format
+
+`data/retrogrades.json` is `{"generatedAt", "source", "script", "planets": {"mercury": [cycle, ...], "venus": [...], ...}, "ayanamsa"}`. `data/mercury-1900-2050.json` is `{"mercury": [cycle, ...], "ayanamsa"}`. Cycles are in time order; each cycle is one retrograde, with the fields below. `source` states the exact method. `ayanamsa` lists the Lahiri ayanamsa on 1 January of each year.
+
+### What each moment means
 
 All positions are apparent geocentric ecliptic longitude of date, as seen from Earth's centre. Full method: [cazimi.live/methodology](https://cazimi.live/methodology).
 
@@ -56,9 +113,9 @@ Retrograde timing is the same in both zodiacs: a station is the minute the plane
 }
 ```
 
-## Live API and MCP server
+## Live API, calendar and MCP server
 
-The same numbers are served without a key, CORS open, rebuilt daily at 00:05 UTC:
+The same numbers are served by [cazimi.live](https://cazimi.live) without a key, CORS open, rebuilt daily at 00:05 UTC ([API docs](https://cazimi.live/methodology#api)):
 
 ```sh
 curl https://cazimi.live/v1/planets/today.json      # which planets are retrograde today
@@ -66,7 +123,13 @@ curl https://cazimi.live/v1/mercury/next.json       # next Mercury retrograde
 curl https://cazimi.live/v1/mars/cycles.json        # every Mars cycle
 ```
 
-AI assistants can use the read-only MCP server at `https://cazimi.live/api/mcp` (Streamable HTTP, no auth, eight tools). It is published in the official MCP Registry as `live.cazimi/retrogrades` ([`server.json`](server.json)). In Claude, add it from the connector directory: [Cazimi Mercury Retrograde](https://claude.ai/directory/cazimi-mercury-retrograde).
+Calendar feed for Google, Apple or Outlook: `https://cazimi.live/v1/calendar/retrogrades.ics`, or one planet at a time ([how to subscribe](https://cazimi.live/retrograde-calendar)).
+
+AI assistants can use the read-only MCP server at `https://cazimi.live/api/mcp` (Streamable HTTP, no auth). It is published in the official MCP Registry as `live.cazimi/retrogrades` ([`server.json`](server.json)). In Claude, add it from the connector directory: [Cazimi Mercury Retrograde](https://claude.ai/directory/cazimi-mercury-retrograde). On iPhone: [Mercury Retrograde: Cazimi](https://apps.apple.com/us/app/cazimi-mercury-retrograde/id6760207689).
+
+## Accuracy
+
+Every station is the minute the planet's apparent longitude rate changes sign in JPL DE421, found by root-finding, not read off a daily table. The published times are checked against JPL Horizons: [cazimi.live/accuracy](https://cazimi.live/accuracy). Spotted a time that disagrees with your own software? [Open an issue](https://github.com/cazimi-live/retrograde-ephemeris/issues/new/choose) with the planet, the moment and your source.
 
 ## Regenerate
 
@@ -78,8 +141,6 @@ python tools/retrogrades.py 2025 2030 mercury,venus,mars,jupiter,saturn,uranus,n
 
 DE421 covers 1900–2050, which bounds the Mercury table. A full eight-planet run takes a few minutes. To add or refresh only the sidereal blocks in existing files: `python tools/sidereal.py data/retrogrades.json data/mercury-1900-2050.json`.
 
-## Licence and citation
+## Licence
 
-Data (`data/`): [CC BY 4.0](LICENSE-DATA). Code (`tools/`): [MIT](LICENSE). If you publish these times, credit **Cazimi** with a link to https://cazimi.live. Citation metadata: [`CITATION.cff`](CITATION.cff).
-
-Spotted a time that disagrees with your own software? Open an issue with the planet, the moment and your source.
+Data (`data/`): [CC BY 4.0](LICENSE-DATA). Code (`tools/`, `examples/`): [MIT](LICENSE). If you publish these times, credit **Cazimi** with a link to https://cazimi.live, or cite the DOI above.

@@ -1,0 +1,27 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  data-and-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: JSON files parse
+        run: for f in data/*.json server.json .zenodo.json; do python -m json.tool "$f" > /dev/null && echo "ok $f"; done
+      - name: Python example
+        run: python examples/python/next_mercury_retrograde.py 2027-01-01
+      - name: JavaScript example
+        run: node examples/javascript/next-mercury-retrograde.mjs 2027-01-01

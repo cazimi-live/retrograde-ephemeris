@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Method and accuracy
+    url: https://cazimi.live/accuracy
+    about: How the times are computed and checked against JPL Horizons.
+  - name: Live JSON API and MCP server
+    url: https://cazimi.live/methodology#api
+    about: The same data served daily, no key needed.
