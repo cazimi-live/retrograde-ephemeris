@@ -3,6 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24011806.svg)](https://doi.org/10.5281/zenodo.24011806)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Cazimi MCP connector](https://glama.ai/mcp/connectors/live.cazimi/retrogrades/badges/score.svg)](https://glama.ai/mcp/connectors/live.cazimi/retrogrades)
 
 **The exact minute (UTC) of every planetary retrograde station, shadow boundary and Sun conjunction, computed from NASA JPL's DE421 ephemeris.** Mercury to Pluto for 2024–2030, and every Mercury retrograde from 1900 to 2050. Open data you can cite, from [Cazimi](https://cazimi.live). It is astronomy timing, not a horoscope.
 
@@ -125,7 +126,7 @@ curl https://cazimi.live/v1/mars/cycles.json        # every Mars cycle
 
 Calendar feed for Google, Apple or Outlook: `https://cazimi.live/v1/calendar/retrogrades.ics`, or one planet at a time ([how to subscribe](https://cazimi.live/retrograde-calendar)).
 
-AI assistants can use the read-only MCP server at `https://cazimi.live/api/mcp` (Streamable HTTP, no auth). It is published in the official MCP Registry as `live.cazimi/retrogrades` ([`server.json`](server.json)). In Claude, add it from the connector directory: [Cazimi Mercury Retrograde](https://claude.ai/directory/cazimi-mercury-retrograde). On iPhone: [Mercury Retrograde: Cazimi](https://apps.apple.com/us/app/cazimi-mercury-retrograde/id6760207689).
+AI assistants can use the read-only MCP server at `https://cazimi.live/api/mcp` (Streamable HTTP, no auth). It is published in the official MCP Registry as `live.cazimi/retrogrades` ([`server.json`](server.json)). In Claude, add it from the connector directory: [Cazimi Mercury Retrograde](https://claude.ai/directory/cazimi-mercury-retrograde). Listed on Glama: [live.cazimi/retrogrades](https://glama.ai/mcp/connectors/live.cazimi/retrogrades). On iPhone: [Mercury Retrograde: Cazimi](https://apps.apple.com/us/app/cazimi-mercury-retrograde/id6760207689).
 
 ## Accuracy
 
